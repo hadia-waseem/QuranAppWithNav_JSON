@@ -1,4 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_parah"
+
+            android:title="Search By Parah" />
+
+        <item
+            android:id="@+id/nav_surah"
+
+            android:title="Search by Surah" />
+
+        <item
+            android:id="@+id/Git"
+
+            android:title="Git Commit" />
+
+
+    </group>
+
 </menu>
