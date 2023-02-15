@@ -12,9 +12,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QuranAppWithNav_Json"
         tools:targetApi="31">
-
+        <activity
+            android:name=".myRecyclerViewAdapterDisplay"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".displayAyah"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".parah"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".MainActivity"
+            android:theme="@style/Theme.QuranAppWithNav_Json.NoActionBar"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace 'com.example.quranappwithnav_json'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.example.quranappwithnav_json"
-        minSdk 22
-        targetSdk 32
+        minSdk 28
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 

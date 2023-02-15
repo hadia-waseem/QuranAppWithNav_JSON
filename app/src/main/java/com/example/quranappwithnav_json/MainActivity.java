@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -20,14 +19,14 @@ import com.google.android.material.navigation.NavigationView;
 public class MainActivity extends AppCompatActivity {
     NavigationView navigationView;
     DrawerLayout drawerLayout;
-    Toolbar toolbar;
+    Toolbar toolbar ;
     ActionBarDrawerToggle toggle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        toolbar = findViewById(R.id.toolbar);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         navigationView=findViewById(R.id.nav_view);
