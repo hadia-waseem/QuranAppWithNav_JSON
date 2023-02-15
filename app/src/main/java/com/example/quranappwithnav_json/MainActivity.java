@@ -1,5 +1,4 @@
 package com.example.quranappwithnav_json;
-package com.example.qurannavigator;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -60,7 +59,12 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent);
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
-
+                    case R.id.Git:
+                        Uri webpage = Uri.parse("https://github.com/hadia-waseem/Quran_App_Json");
+                        Intent i = new Intent(Intent.ACTION_VIEW, webpage);
+                        startActivity(i);
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
                 }
 
                 return true;
