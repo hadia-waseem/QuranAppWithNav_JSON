@@ -1,18 +1,17 @@
 package com.example.quranappwithnav_json;
 
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
+import android.view.MenuItem;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
-import android.content.Intent;
-import android.net.Uri;
-import android.os.Bundle;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -59,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
                     case R.id.Git:
-                        Uri webpage = Uri.parse("https://github.com/hadia-waseem/Quran_App_Json");
+                        Uri webpage = Uri.parse("https://github.com/hadia-waseem/QuranAppWithNav_JSON/commits/main");
                         Intent i = new Intent(Intent.ACTION_VIEW, webpage);
                         startActivity(i);
                         drawerLayout.closeDrawer(GravityCompat.START);

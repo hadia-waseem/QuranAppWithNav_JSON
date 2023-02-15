@@ -24,7 +24,6 @@ public class displayAyah extends AppCompatActivity {
     ArrayList<ayah> dataHolder;
     RecyclerView.Adapter adapter;
     RecyclerView.LayoutManager layoutManager;
-    TextView heading;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +41,7 @@ public class displayAyah extends AppCompatActivity {
 
         if(format.equals("parah"))
         {
-            heading.setText("Ayas of Parah number "+number);
+
             try {
                 JSONObject obj=new JSONObject(loadJson());
                 JSONArray array=obj.getJSONArray("data");
@@ -70,7 +69,7 @@ public class displayAyah extends AppCompatActivity {
         }
         else
         {
-            heading.setText("Ayas of Surah "+name);
+
             try {
                 JSONObject obj=new JSONObject(loadJson());
                 JSONArray array=obj.getJSONArray("data");

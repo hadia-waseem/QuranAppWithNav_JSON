@@ -2,7 +2,6 @@ package com.example.quranappwithnav_json;
 
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -37,7 +36,6 @@ public class myRecyclerViewAdapterDisplay extends RecyclerView.Adapter<myRecycle
     @Override
     public void onBindViewHolder(@NonNull MyVH holder, int position) {
         holder.data=logs.get(position);
-        holder.juz.setText(String.valueOf(holder.data.juz));
         holder.surahName.setText(String.valueOf((holder.data.SurahName)));
         holder.text.setText(String.valueOf(holder.data.Text));
 
@@ -54,7 +52,6 @@ public class myRecyclerViewAdapterDisplay extends RecyclerView.Adapter<myRecycle
 
         TextView surahName;
         TextView  text;
-        TextView juz;
         ayah data;
 
         public MyVH(@NonNull View itemView) {
@@ -63,7 +60,6 @@ public class myRecyclerViewAdapterDisplay extends RecyclerView.Adapter<myRecycle
             context = itemView.getContext();
             surahName = itemView.findViewById(R.id.surahName);
             text = itemView.findViewById(R.id.Ayah);
-            juz=itemView.findViewById(R.id.juz);
 
         }
 

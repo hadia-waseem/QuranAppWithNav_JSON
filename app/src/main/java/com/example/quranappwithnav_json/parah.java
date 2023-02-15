@@ -1,14 +1,13 @@
 package com.example.quranappwithnav_json;
 
-import android.app.Activity;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -16,8 +15,8 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class parah extends AppCompatActivity {
     RecyclerView recycle ;
@@ -41,7 +40,6 @@ public class parah extends AppCompatActivity {
         recycle.setLayoutManager(layoutManager);
         if(selectedFormt.equals("parah"))
         {
-            heading.setText("Select any Parah/Juzz to naviagate through parah");
             for (int i=0;i<30;i++)
             {
                 select s1=new select();
@@ -97,7 +95,7 @@ public class parah extends AppCompatActivity {
             byte[] buffer=new byte[size];
             in.read(buffer);
             in.close();
-            json=new String(buffer,"UTF-8");
+            json=new String(buffer, StandardCharsets.UTF_8);
             Log.d("array","Done");
 
 
@@ -109,4 +107,4 @@ public class parah extends AppCompatActivity {
         }
         return json;
     }
-}
+    }
